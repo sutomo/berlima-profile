@@ -1,0 +1,24 @@
+
+.footer {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+    transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+    -webkit-transition-property: all;
+    transition-property: all;
+}
+
+.reveal .footer {
+    position: absolute;
+    bottom: -1em;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5em;
+    z-index: 100;
+    opacity: 0;
+}
+
+.show-footer .footer {
+    bottom: 1em;
+    opacity: 1;
+}
